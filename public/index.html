@@ -1,61 +1,408 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nvision - Beta</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Merriweather:400italic,400' rel='stylesheet' type='text/css'>
+    <title>Nvision - beta</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="js/animate.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/style-slide.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/modernizr.js"></script>
     <script src="https://use.fontawesome.com/548009fd68.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
-    <span class="nav-open material-icons">view_headline</span>
-    <nav>
-      <span class="nav-close material-icons">close</span>
-      <img src="http://gouthamve.github.io/nvision/img/loader.png" alt="logo">
-      <a href="#about-us">About us</a>
-      <a href="#sponsors">Sponsors</a>
-      <a href="#online-events">Online events</a>
-      <a href="#workshops">Workshops</a>
-      <a href="#ca">CA</a>
-      <a href="#team">Team</a>
-    </nav>
-    <section id="about-us">
-      <h2>About us</h2>
-      <p>Nvision IITH hello</p>
-    </section>
-    <section id="sponsors">
-      <h2>Sponsors</h2>
-      <p>Nvision IITH</p>
-    </section>
-    <section id="online-events">
-      <h2>Online Events</h2>
-      <p>Nvision IITH</p>
-    </section>
-    <section id="workshops">
-      <h2>Workshops</h2>
-      <p>Nvision IITH</p>
-    </section>
-    <section id="ca">
-      <h2>CA</h2>
-      <p>Nvision IITH</p>
-    </section>
-    <section id="team">
-      <h2>Team</h2>
-      <p>Nvision IITH</p>
-    </section>
-    <footer>
-      <div>
-        <a href="https://www.facebook.com/nvision.IIThyderabad/" target="_blank"><i class="fa fa-facebook-square"></i></a>
-        <a href="https://twitter.com/nvisioniith" target="_blank"><i class="fa fa-twitter-square"></i></a>
-        <a href="https://plus.google.com/+nvisioniith" target="_blank"><i class="fa fa-google-plus-square"></i></a>
-      </div>
-      <p>&copy; 2016 - &eta;vision, IITH</p>
-    </footer>
+    <div class="initial-div">
+      <img class="logo-img" src="http://www.energysys.com/wp-content/uploads/2012/03/Energysys_avatar-logo-transparent-bg.png?d3ed43" alt="logo">
+    </div>
+    <a class="cd-nav-trigger cd-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="cd-icon"></span></a>	
+    <div class="cd-projects-container">
+      <ul class="cd-projects-previews">
+        <li>
+          <a href="#">
+            <div class="cd-project-title">
+              <h2>About us</h2>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <div class="cd-project-title">
+              <h2>Sponsors</h2>
+            </div>
+          </a>
+        </li>
+			
+        <li>
+          <a href="#">
+            <div class="cd-project-title">
+              <h2>CA</h2>
+            </div>
+          </a>
+        </li>
+			
+        <li>
+          <a href="#">
+            <div class="cd-project-title">
+              <h2>Team</h2>
+            </div>
+          </a>
+        </li>
+      </ul> <!-- .cd-projects-previews -->
+
+      <ul class="cd-projects">
+        <li>
+          <div class="preview-image">
+            <div class="cd-project-title">
+              <h2>About us</h2>
+            </div> 
+          </div>
+
+          <div class="cd-project-info" style="font-size: 1.5em;">
+            <p>
+              Started in 2011, ηvision is the techical fest organised by the students of IIT Hyderabad with a motto of providing a platform to the technical enthusiasts of our country to explore and innovate and showcase their technical and engineering prowess. Over the past 3 years, ηvision has gradually evolved from an inter college festival to one of the recognised techincal fests of our country.
+            </p>
+            <p>
+              With a broader scope and bigger ideas, ηvision 2016 looks forward to exploring ever widening horizons and surmounting greater heights. With a myriad of events spread across a plethora of domains, ηvision 2016 promises to be a platform which shall integrate technology with challenging life problems. A festival full of promise, ηvision 2016 shall be a journey more exciting and enthralling than any other to bring out the real geek in any techie.
+            </p>
+          </div> <!-- .cd-project-info -->
+        </li>
+
+        <li>
+          <div class="preview-image">
+            <div class="cd-project-title">
+              <h2>Previous Sponsors</h2>
+            </div> 
+          </div>
+
+          <div class="cd-project-info" style="text-align: center;">
+            <figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure>
+            <figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure><figure class="sponsor">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
+              <figcaption>
+                <h3>Workshop Sponsor</h3>
+              </figcaption>
+              <a href="//fb.me" target="_blank"></a>
+            </figure>
+          </div> <!-- .cd-project-info -->
+        </li>
+
+        <li>
+          <div class="preview-image">
+            <div class="cd-project-title">
+              <h2>Campus Ambassador</h2>
+            </div> 
+          </div>
+
+          <div class="cd-project-info">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+            </p>
+          </div> <!-- .cd-project-info -->
+        </li>
+
+        <li>
+          <div class="preview-image">
+            <div class="cd-project-title">
+              <h2>Team</h2>
+            </div> 
+          </div>
+
+          <div class="cd-project-info">
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="team-member">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+              <figcaption>
+                <h2>John</h2>
+                <p>Web Coordinator <br> person@email.com</p>
+                <div class="icons"><a href="#"><i class="ion-chatbubbles"></i></a>
+                  <a href="//fb.com" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                </div>
+              </figcaption>
+            </figure>
+            
+          </div> <!-- .cd-project-info -->
+        </li>
+      </ul> <!-- .cd-projects -->
+
+      <button class="scroll cd-text-replace">Scroll</button>
+    </div> <!-- .cd-project-container -->
+    
   </body>
 </html>
