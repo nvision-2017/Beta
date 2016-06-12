@@ -49,7 +49,7 @@ Menu trigger
   height: 52px;
   width: 52px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   transition: background 0.2s;
@@ -59,7 +59,7 @@ Menu trigger
 .cd-nav-trigger .cd-icon::after {
   /* menu icon created in CSS */
   position: absolute;
-  background-color: #ffffff;
+  background-color: #000;
   border-radius: 2px;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -71,7 +71,7 @@ Menu trigger
   backface-visibility: hidden;
 }
 .no-touch .cd-nav-trigger:hover {
-  background-color: black;
+  background-color: #00ccff;
 }
 .cd-nav-trigger .cd-icon {
   /* middle line of the menu icon */
