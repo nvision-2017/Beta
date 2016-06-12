@@ -1,7 +1,5 @@
 jQuery(document).ready(function($){
-  
-    //$(".initial-div").fadeOut(5000).animate({zIndex: 0}).fadeIn();
-    
+
 	//cache DOM elements
 	var projectsContainer = $('.cd-projects-container'),
 		projectsPreviewWrapper = projectsContainer.find('.cd-projects-previews'),
@@ -11,10 +9,11 @@ jQuery(document).ready(function($){
 		navigation = $('.cd-primary-nav'),
 		//if browser doesn't support CSS transitions...
 		transitionsNotSupported = ( $('.no-csstransitions').length > 0);
+        navigationTrigger.addClass('nav-visible');
 
 	var animating = false,
 		//will be used to extract random numbers for projects slide up/slide down effect
-		numRandoms = projects.find('li').length, 
+		numRandoms = projects.find('li').length,
 		uniqueRandoms = [];
 
 	//open project
@@ -22,41 +21,41 @@ jQuery(document).ready(function($){
 		event.preventDefault();
 		if( animating == false ) {
 			animating = true;
-			navigationTrigger.add(projectsContainer).addClass('project-open');
+			navigationTrigger.add(projectsContainer).removeClass('nav-visible').addClass('project-open');
 			openProject($(this).parent('li'));
 		}
 	});
 
 	navigationTrigger.on('click', function(event){
 		event.preventDefault();
-		
+
 		if( animating == false ) {
 			animating = true;
 			if( navigationTrigger.hasClass('project-open') ) {
 				//close visible project
-				navigationTrigger.add(projectsContainer).removeClass('project-open');
+				navigationTrigger.add(projectsContainer).removeClass('project-open').addClass('nav-visible');
 				closeProject();
-			} else if( navigationTrigger.hasClass('nav-visible') ) {
+			} else if( !navigationTrigger.hasClass('nav-visible') ) {
 				//close main navigation
-				navigationTrigger.removeClass('nav-visible');
+				navigationTrigger.addClass('nav-visible');
 				navigation.removeClass('nav-clickable nav-visible');
 				if(transitionsNotSupported) projectPreviews.removeClass('slide-out');
 				else slideToggleProjects(projectsPreviewWrapper.children('li'), -1, 0, false);
 			} else {
 				//open main navigation
-				navigationTrigger.addClass('nav-visible');
+				navigationTrigger.removeClass('nav-visible');
 				navigation.addClass('nav-visible');
 				if(transitionsNotSupported) projectPreviews.addClass('slide-out');
 				else slideToggleProjects(projectsPreviewWrapper.children('li'), -1, 0, true);
 			}
-		}	
+		}
 
 		if(transitionsNotSupported) animating = false;
 	});
 
 	//scroll down to project info
 	projectsContainer.on('click', '.scroll', function(){
-		projectsContainer.animate({'scrollTop':$(window).height()}, 500); 
+		projectsContainer.animate({'scrollTop':$(window).height()}, 500);
 	});
 
 	//check if background-images have been loaded and show project previews
@@ -78,12 +77,12 @@ jQuery(document).ready(function($){
 	function openProject(projectPreview) {
 		var projectIndex = projectPreview.index();
 		projects.children('li').eq(projectIndex).add(projectPreview).addClass('selected');
-		
+
 		if( transitionsNotSupported ) {
 			projectPreviews.addClass('slide-out').removeClass('selected');
 			projects.children('li').eq(projectIndex).addClass('content-visible');
 			animating = false;
-		} else { 
+		} else {
 			slideToggleProjects(projectPreviews, projectIndex, 0, true);
 		}
       $(".initial-div").hide();
@@ -110,7 +109,7 @@ jQuery(document).ready(function($){
 
 		var randomProjectIndex = makeUniqueRandom();
 		if( randomProjectIndex == projectIndex ) randomProjectIndex = makeUniqueRandom();
-		
+
 		if( index < numRandoms - 1 ) {
 			projectsPreviewWrapper.eq(randomProjectIndex).toggleClass('slide-out', bool);
 			setTimeout( function(){
@@ -118,7 +117,7 @@ jQuery(document).ready(function($){
 				slideToggleProjects(projectsPreviewWrapper, projectIndex, index + 1, bool);
 			}, 150);
 		} else if ( index == numRandoms - 1 ) {
-			//this is the last project preview to be animated 
+			//this is the last project preview to be animated
 			projectsPreviewWrapper.eq(randomProjectIndex).toggleClass('slide-out', bool).one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 				if( projectIndex != -1) {
 					projects.children('li.selected').addClass('content-visible');
@@ -148,7 +147,7 @@ jQuery(document).ready(function($){
             uniqueRandoms.push(i);
         }
 	}
-  
+
     navigationTrigger.click();
 });
 
