@@ -122,7 +122,7 @@ Menu trigger
   background-color: rgba(255, 255, 255, 0);
 }
 .cd-nav-trigger.project-open .cd-icon::before, .cd-nav-trigger.project-open .cd-icon::after {
-  background-color: white;
+  background-color: black;
 }
 .cd-nav-trigger.project-open .cd-icon::before {
   -webkit-transform: translateY(0) rotate(45deg);
