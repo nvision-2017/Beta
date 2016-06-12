@@ -2,27 +2,117 @@
 <html>
   <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Merriweather:400italic,400' rel='stylesheet' type='text/css'>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="&eta;vision is the technical fest of IIT Hyderabad usually held in month of November.">
+		<meta name="author" content="Nvision 2016">
+		<meta name="keyword" content="technical, IIT Hyderabad, fest, competitions, events">
+		<meta name="robots" content="index, follow">
+
+    <!-- Facebook open graphs -->
+		<meta property="og:site_name" content="&eta;vision">
+		<meta property="og:title" content="&eta;vision 2016 Beta Website">
+		<meta property="og:type" content="technical_fest:nvision">
+		<meta property="og:image" content="img/logo.png">
+		<meta property="og:url" content="nvision.org.in">
+		<meta property="og:description" content="&eta;vision: Technical Fest of IIT Hyderabad">
+
+
+	  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Merriweather:400italic,400' rel='stylesheet' type='text/css'>
     <title>Nvision - beta</title>
+    <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="css/reset.css">
-<!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style-slide.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sponsors.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hexagons.min.css">
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://use.fontawesome.com/548009fd68.js"></script>
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/bootstrap.js"></script>
   </head>
-  <body>
+  <body id="parent">
+
+
     <div class="initial-div">
-      <img class="logo-img" src="http://www.energysys.com/wp-content/uploads/2012/03/Energysys_avatar-logo-transparent-bg.png?d3ed43" alt="logo">
+      <div class="bg"></div>
+      <img class="logo-img" src="img/nvision.png" alt="logo"><!-- added image in img folder and updated src -->
+
+        <div class="social-left mobile"><!-- Changes made in social and removed above line -->
+          <a class="contact-us btn MatModal">Contact us</a>
+        </div>
+        <div class="social-right mobile"><!-- Changes made in social and removed above line -->
+          <!--  Small Buttons spin-icon -->
+      		<a href="https://www.facebook.com/nvision.IIThyderabad" target="_blank"><span class="hb hb-xs spin-icon"><i class="fa fa-facebook"></i></span></a>
+      		<a href="https://twitter.com/nvisioniith" target="_blank"><span class="hb hb-xs spin-icon"><i class="fa fa-twitter"></i></span></a>
+      		<!--  Small Buttons spin-icon End -->
+        </div>
+        <div class="social-right desktop"><!-- Changes made in social and removed above line -->
+          <a class="contact-us btn MatModal">Contact us</a>
+          <!--  Small Buttons spin-icon -->
+      		<a href="https://www.facebook.com/nvision.IIThyderabad" target="_blank"><span class="hb hb-xs spin-icon"><i class="fa fa-facebook"></i></span></a>
+      		<a href="https://twitter.com/nvisioniith" target="_blank"><span class="hb hb-xs spin-icon"><i class="fa fa-twitter"></i></span></a>
+      		<!--  Small Buttons spin-icon End -->
+        </div>
+
+      <div id="MatModal-container">
+          <span class="MatRound"></span>
+          <div class="MatModal-content">
+            <a href="#" id="close-MatModal">Close</a>
+            <h1>For associations</h1>
+            <div>
+              <h3>Soumitra</h3>
+              <h4>Marketing Manager</h4>
+              <span>+97 9949174386</span><br>
+              <a href="mailto:me14btech11022@iith.ac.in">me14btech11022@iith.ac.in</a>
+            </div>
+            <div>
+              <h3>Aman Chourasia</h3>
+              <span>+97 8517885075</span><br>
+              <a href="mailto:me15btech11003@iith.ac.in">me15btech11003@iith.ac.in</a>
+            </div>
+            <div>
+              <h3>Ayush Gondole</h3>
+              <span>+97 9421619580</span><br>
+              <a href="mailto:ch15btech11010@iith.ac.in">ch15btech11010@iith.ac.in</a>
+            </div>
+            <div>
+              <h3>Sourabh Hans</h3>
+              <span>+97 7093405760</span><br>
+              <a href="mailto:me15btech11036@iith.ac.in">me15btech11036@iith.ac.in</a>
+            </div>
+            <div>
+              <h3>Unnatti Sharma</h3>
+              <span>+97 9494509660</span><br>
+              <a href="mailto:ch15btech11028@iith.ac.in">ch15btech11028@iith.ac.in</a>
+            </div>
+          </div>
+      </div>
     </div>
-    <a class="cd-nav-trigger cd-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="cd-icon"></span></a>	
-    <div class="cd-projects-container">
+
+    <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Contact us</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <a class="cd-nav-trigger cd-text-replace" href="#primary-nav">Menu<span aria-hidden="true" class="cd-icon"></span></a>
+    <div class="cd-projects-container" id="child">
       <ul class="cd-projects-previews">
         <li>
           <a href="#">
@@ -39,7 +129,7 @@
             </div>
           </a>
         </li>
-			
+
         <li>
           <a href="#">
             <div class="cd-project-title">
@@ -47,7 +137,7 @@
             </div>
           </a>
         </li>
-			
+
         <li>
           <a href="#">
             <div class="cd-project-title">
@@ -62,7 +152,7 @@
           <div class="preview-image">
             <div class="cd-project-title">
               <h2>About us</h2>
-            </div> 
+            </div>
           </div>
 
           <div class="cd-project-info" style="font-size: 1.5em;">
@@ -78,65 +168,338 @@
         <li>
           <div class="preview-image">
             <div class="cd-project-title">
-              <h2>Previous Sponsors</h2>
-            </div> 
+              <h2 style="color:#666666;text-shadow:0 0 2px #fff">Previous Sponsors</h2>
+            </div>
           </div>
 
           <div class="cd-project-info">
-            <p>
-              <figure class="sponsor">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
-                <figcaption>
-                  <h3>Workshop Sponsor</h3>
-                </figcaption>
-                <a href="//fb.me" target="_blank"></a>
-              </figure><figure class="sponsor">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
-                <figcaption>
-                  <h3>Workshop Sponsor</h3>
-                </figcaption>
-                <a href="//fb.me" target="_blank"></a>
-              </figure><figure class="sponsor">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
-                <figcaption>
-                  <h3>Workshop Sponsor</h3>
-                </figcaption>
-                <a href="//fb.me" target="_blank"></a>
-              </figure><figure class="sponsor">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
-                <figcaption>
-                  <h3>Workshop Sponsor</h3>
-                </figcaption>
-                <a href="//fb.me" target="_blank"></a>
-              </figure><figure class="sponsor">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
-                <figcaption>
-                  <h3>Workshop Sponsor</h3>
-                </figcaption>
-                <a href="//fb.me" target="_blank"></a>
-              </figure><figure class="sponsor">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample52.jpg" alt="sample52" />
-                <figcaption>
-                  <h3>Workshop Sponsor</h3>
-                </figcaption>
-                <a href="//fb.me" target="_blank"></a>
-              </figure>
-            </p>
+
+              <!-- codesome -->
+
+                <div class="row">
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-10">
+                    <div class="row">
+
+                      <!--LINE 1-->
+                  <legend class="sponsor-type-title">Powered By</legend>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb desktop"></div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="https://www.coyatri.com/">
+                      <img class="img-responsive" src="img/sponsors/coyatri.png"/>
+                      <p class="sponsor-name">CoYatri</p>
+                      <p class="sponsor-role">CO-Title Sponsor</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.novatechrobo.com/">
+                      <img class="img-responsive" src="img/sponsors/novatechlogo.png"/>
+                      <p class="sponsor-name">Novatech Robo</p>
+                      <p class="sponsor-role">CO-Title Sponsor</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb desktop"></div>
+
+                  <!--LINE 2-->
+                  <p><legend class="sponsor-type-title">Sponsors</legend></p>
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.i3indyatechnologies.com/">
+                      <img class="img-responsive" src="img/sponsors/i3indya.png"/>
+                      <p class="sponsor-name">I3 Indya</p>
+                      <p class="sponsor-role">Workshop Outreach Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.solutionsinfini.com/">
+                      <img class="img-responsive" src="img/sponsors/solinfini.png"/>
+                      <p class="sponsor-name">Solutions Infini</p>
+                      <p class="sponsor-role">SMS Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.spacekidzindia.com/">
+                      <img class="img-responsive" src="img/sponsors/spacekidz.png"/>
+                      <p class="sponsor-name">Space Kidz India</p>
+                      <p class="sponsor-role">Event Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://popsci.in/">
+                      <img class="img-responsive" src="img/sponsors/popsci.png"/>
+                      <p class="sponsor-name">Popular Science</p>
+                      <p class="sponsor-role">Magazine Partner</p>
+                    </a>
+                  </div>
+
+                  <!--LINE 3-->
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="https://campusdiaries.com/">
+                      <img class="img-responsive" src="img/sponsors/campusdiaries.png"/>
+                      <p class="sponsor-name">Campus Diaries</p>
+                      <p class="sponsor-role">Wingman</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="https://www.hackerrank.com/">
+                      <img class="img-responsive" src="img/sponsors/hackerrank.png"/>
+                      <p class="sponsor-name">HackerRank</p>
+                      <p class="sponsor-role">Event Sponsor</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://in.bluehost.com/">
+                      <img class="img-responsive" src="img/sponsors/bh.png"/>
+                      <p class="sponsor-name">Bluehost</p>
+                      <p class="sponsor-role">Event Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="https://campusdiaries.com/25under25/home">
+                      <img class="img-responsive" src="img/sponsors/25under25-logo.png"/>
+                      <p class="sponsor-name">GenX 25 under 25</p>
+                      <p class="sponsor-role">Event Partner</p>
+                    </a>
+                  </div>
+
+                  <!--LINE 4-->
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="https://www.indianinstituteofphotography.com/">
+                      <img class="img-responsive" src="img/sponsors/iip.png"/>
+                      <p class="sponsor-name">IIP</p>
+                      <p class="sponsor-role">Photography Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.eenadu.net/">
+                      <img class="img-responsive" src="img/sponsors/eenadu.png"/>
+                      <p class="sponsor-name">Eenadu</p>
+                      <p class="sponsor-role">Media Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.etv.co.in/channels/home?channelId=2">
+                      <img class="img-responsive" src="img/sponsors/etv_telangana.png"/>
+                      <p class="sponsor-name">ETV Telangana</p>
+                      <p class="sponsor-role">Media Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.manyagroup.com/">
+                      <img class="img-responsive" src="img/sponsors/logo-new.png"/>
+                      <p class="sponsor-name">Manya Group</p>
+                      <p class="sponsor-role">Education Partner</p>
+                    </a>
+                  </div>
+
+                  <!--LINE 5-->
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.ifc3india.com/">
+                      <img class="img-responsive" src="img/sponsors/website_ifc3.png"/>
+                      <p class="sponsor-name">IFC3 India</p>
+                      <p class="sponsor-role">Event Sponsor</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.ibm.com/">
+                      <img class="img-responsive" src="img/sponsors/ibm.png"/>
+                      <p class="sponsor-name">IBM</p>
+                      <p class="sponsor-role">Drone Sponsor</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.ibgroup.io/index.html">
+                      <img class="img-responsive" src="img/sponsors/ib.png"/>
+                      <p class="sponsor-name">iB Group</p>
+                      <p class="sponsor-role">Stall Sponsor</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.frogo.in/">
+                      <img class="img-responsive" src="img/sponsors/frogo.png"/>
+                      <p class="sponsor-name">Frogo</p>
+                      <p class="sponsor-role">Gift Partner</p>
+                    </a>
+                  </div>
+
+                  <!--LINE 6-->
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.nestaway.com/">
+                      <img class="img-responsive" src="img/sponsors/nestaway.png"/>
+                      <p class="sponsor-name">nestaway</p>
+                      <p class="sponsor-role">Hospitality Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.ebay.in/">
+                      <img class="img-responsive" src="img/sponsors/ebay.png"/>
+                      <p class="sponsor-name">ebay.in</p>
+                      <p class="sponsor-role">Coupan Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.pikeducation.com/">
+                      <img class="img-responsive" src="img/sponsors/pik_site_logo.png"/>
+                      <p class="sponsor-name">Pik Education</p>
+                      <p class="sponsor-role">Education Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.spykar.com/">
+                      <img class="img-responsive" src="img/sponsors/spykar.png"/>
+                      <p class="sponsor-name">Spykar</p>
+                      <p class="sponsor-role">Fashion Partner</p>
+                    </a>
+                  </div>
+
+                  <!--LINE 7-->
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb desktop"></div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.isic.co.in/">
+                      <img class="img-responsive" src="img/sponsors/ISIC_logo1.png"/>
+                      <p class="sponsor-name">ISIC Student Cards</p>
+                      <p class="sponsor-role">Coupan Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="#">
+                      <img class="img-responsive" src="img/sponsors/sonyo.png"/>
+                      <p class="sponsor-name">Sonyo Garments</p>
+                      <p class="sponsor-role">Official Merchandise Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb desktop"></div>
+
+                  <p><legend class="sponsor-type-title">Media Partners</legend></p>
+                  <!--Line 8-->
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://thecollegefever.com/">
+                      <img class="img-responsive" src="img/sponsors/thecollegefever.png"/>
+                      <p class="sponsor-name">TheCollegeFever</p>
+                      <p class="sponsor-role">Online Media Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://penumbramag.com/">
+                      <img class="img-responsive" src="img/sponsors/Penumbra.png"/>
+                      <p class="sponsor-name">Penumbra</p>
+                      <p class="sponsor-role">Online Media Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://festpav.com/">
+                      <img class="img-responsive" src="img/sponsors/Festpav.png"/>
+                      <p class="sponsor-name">Festpav</p>
+                      <p class="sponsor-role">Online Media Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://springtide.in/">
+                      <img class="img-responsive" src="img/sponsors/SpringTide.png"/>
+                      <p class="sponsor-name">SpringTide</p>
+                      <p class="sponsor-role">Online Media Partner</p>
+                    </a>
+                  </div>
+
+                  <!--Line 9-->
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://fests.info/">
+                      <img class="img-responsive" src="img/sponsors/Fests.info.png"/>
+                      <p class="sponsor-name">Fests.info</p>
+                      <p class="sponsor-role">Online Media Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://testfunda.com/">
+                      <img class="img-responsive" src="img/sponsors/TestFunda.png"/>
+                      <p class="sponsor-name">TestFunda</p>
+                      <p class="sponsor-role">Online Media Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://indiacollegefest.com/">
+                      <img class="img-responsive" src="img/sponsors/icf.png"/>
+                      <p class="sponsor-name">IndiaCollegeFest.com</p>
+                      <p class="sponsor-role">Online Media Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://www.knowafest.com/">
+                      <img class="img-responsive" src="img/sponsors/bottomlogo.png"/>
+                      <p class="sponsor-name">Know A Fest</p>
+                      <p class="sponsor-role">Online Media Partner</p>
+                    </a>
+                  </div>
+
+                  <!--Line 10-->
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb desktop"></div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://jammag.com/">
+                      <img class="img-responsive" src="img/sponsors/jam.png"/>
+                      <p class="sponsor-name">JAM</p>
+                      <p class="sponsor-role">Online Media Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" target="_blank" href="http://indiansnews.com/">
+                      <img class="img-responsive" src="img/sponsors/in.png"/>
+                      <p class="sponsor-name">Indiansnews.com</p>
+                      <p class="sponsor-role">Online Media Partner</p>
+                    </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6 thumb desktop"></div>
+
+                </div>
+              </div>
+              <div class="col-lg-1"></div>
+            </div>
+
+
+              <!-- /codesome -->
+
+
+
           </div><!-- .cd-project-info -->
         </li>
 
         <li id="ca-title">
           <div class="preview-image" id="ca-bg-img">
             <div class="cd-project-title" >
-              <h2>Campus Ambassador</h2>
-            </div> 
+              <h2></h2>
+            </div>
           </div>
-          <div class="cd-project-info">
+          <div class="cd-project-info" style="padding-top:0 !important">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quod dicta aliquid nemo repellendus distinctio minus dolor aperiam suscipit, ea enim accusantium, deleniti qui sequi sint nihil modi amet eligendi, quidem animi error labore voluptatibus sed. Qui magnam labore, iusto nostrum. Praesentium non, impedit accusantium consequatur officia architecto, mollitia placeat aperiam tenetur pariatur voluptatibus corrupti vitae deserunt! Nostrum non mollitia deserunt ipsam. Sunt quaerat natus cupiditate iure ipsa voluptatibus recusandae ratione vitae amet distinctio, voluptas, minus vero expedita ea fugit similique sit cumque ad id facere? Ab quas, odio neque quis ratione. Natus labore sit esse, porro placeat eum hic.
+              <iframe src="https://docs.google.com/a/iith.ac.in/forms/d/1-dtOC2B7i77jAzXsrCgBK2eLSBvppezSDbDy1Yj9ejI/viewform" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" style="display:inline-block">Loading...</iframe>
             </p>
           </div> <!-- .cd-project-info -->
         </li>
@@ -144,12 +507,12 @@
         <li>
           <div class="preview-image">
             <div class="cd-project-title">
-              <h2>Team</h2>
-            </div> 
+              <h2 style="color:black"></h2>
+            </div>
           </div>
 
           <div class="cd-project-info">
-            <figure class="team-member">
+            <!-- <figure class="team-member">
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
               <figcaption>
                 <h2>John</h2>
@@ -159,14 +522,464 @@
                   <a href="#"> <i class="fa fa-twitter"></i></a>
                 </div>
               </figcaption>
-            </figure>
-            
+            </figure> -->
+
+<!--            Manager 1-->
+            <div class="team-container">
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/mudit.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Mudit Gupta</h3>
+                  <p>
+                    <span>Manager 1</span><br>
+                    <span>+91 9705731498</span><br>
+                    <a class="info" href="mailto:es14btech11012@iith.ac.in">es14btech11012@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/mudit.gupta.05"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+            </div>
+
+
+            <div class="team-container">
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/man.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Abhijeet Bhure</h3>
+                  <p>
+                    <span>Hospitality</span><br>
+                    <span>+91 9503581413</span><br>
+                    <a class="info" href="mailto:cs15btech11001@iith.ac.in">cs15btech11001@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/abhijeet.bhure.18"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/angel.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Angel Rawat</h3>
+                  <p>
+                    <span>Hospitality</span><br>
+                    <span>+91 7839926881</span><br>
+                    <a class="info" href="mailto:ce15btech11003@iith.ac.in">ce15btech11003@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/angel.rawat.16121"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/koppolu.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Koppolu Sidhardha</h3>
+                  <p>
+                    <span>Infra</span><br>
+                    <span>+91 7382737989</span><br>
+                    <a class="info" href="mailto:me14btech11025@iith.ac.in">me14btech11025@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/sidhardha.koppolu"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+            </div>
+
+<!--            Manager 2-->
+            <div class="team-container">
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/gouthamve.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Goutham V</h3>
+                  <p>
+                    <span>Manager 2</span><br>
+                    <span>+91 9959552408</span><br>
+                    <a class="info" href="mailto:cs14btech11014@iith.ac.in">cs14btech11014@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/gouthamve"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a class="info" href="https://https://twitter.com/putadent"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+
+
+            <div class="team-container">
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/ganesh.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Ganesh Vernekar</h3>
+                  <p>
+                    <span>Web</span><br>
+                    <span>+91 9481460358</span><br>
+                    <a class="info" href="mailto:cs15btech11018@iith.ac.in">cs15btech11018@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/ganesh.vernekar.988"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a class="info" href="https://twitter.com/ganeshv003"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/prateek.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Prateek Kumar</h3>
+                  <p>
+                    <span>Web</span><br>
+                    <span>+91 9700389391</span><br>
+                    <a class="info" href="mailto:cs15btech11031@iith.ac.in">cs15btech11031@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/prateekkumarweb"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a class="info" href="https://twitter.com/prateekkumarweb"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/apurva.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Apurva Bhagat</h3>
+                  <p>
+                    <span>Creatives</span><br>
+                    <span>+91 8275220913</span><br>
+                    <a class="info" href="mailto:ch15btech11007@iith.ac.in">ch15btech11007@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/apurva.bhagat.161"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/meka.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Goutham Meka</h3>
+                  <p>
+                    <span>Creatives</span><br>
+                    <span>+91 7396623636</span><br>
+                    <a class="info" href="mailto:cs15btech11025@iith.ac.in">cs15btech11025@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/iGoutham"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a class="info" href="https://twitter.com/iGoutham007"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/sunidhi.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Sunidhi Bachawala</h3>
+                  <p>
+                    <span>Creatives</span><br>
+                    <span>+91 9573108168</span><br>
+                    <a class="info" href="mailto:me15btech11005@iith.ac.in">me15btech11005@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/sunidhi.bachawala"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/chander.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Chander Dev</h3>
+                  <p>
+                    <span>Online Publicity</span><br>
+                    <span>+91 8988089236</span><br>
+                    <a class="info" href="mailto:ee15btech11006@iith.ac.in">ee15btech11006@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/chanderdev.negi"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/koumudhi.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>D Koumudhi</h3>
+                  <p>
+                    <span>Online Publicity</span><br>
+                    <span>+91 7032400268</span><br>
+                    <a class="info" href="mailto:me15btech11008@iith.ac.in">me15btech11008@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/koumudhi.deshpande.7"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+
+
+
+
+
+            </div>
+
+<!--            Manager 3-->
+            <div class="team-container">
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/man.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Sai Niranjan Reddy</h3>
+                  <p>
+                    <span>Manager 3</span><br>
+                    <span>+91 9014611990</span><br>
+                    <a class="info" href="mailto:es14btech11011@iith.ac.in">es14btech11011@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/sai.n.reddy1"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+            </div>
+
+
+            <div class="team-container">
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/vardhan.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Srivardhan Reddy</h3>
+                  <p>
+                    <span>Workshops</span><br>
+                    <span>+91 8121539192</span><br>
+                    <a class="info" href="mailto:ee15btech11009@iith.ac.in">ee15btech11009@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/srivardhan.G"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/man.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Karthik Yadav</h3>
+                  <p>
+                    <span>Events</span><br>
+                    <span>+91 9959552408</span><br>
+                    <a class="info" href="mailto:es14btech11009@iith.ac.in">es14btech11009@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/profile.php?id=100003067573660"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/jayasimha.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Jayasimha Reddy</h3>
+                  <p>
+                    <span>Events</span><br>
+                    <span>+91 9100591709</span><br>
+                    <a class="info" href="mailto:ee15btech11024@iith.ac.in">ee15btech11024@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/jayasimhareddy.ravula"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a class="info" href="https://twitter.com/jayasimha_007"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/deepak.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Deepak Nathani</h3>
+                  <p>
+                    <span>Informals</span><br>
+                    <span>+91 9177289949</span><br>
+                    <a class="info" href="mailto:me15btech11009@iith.ac.in">me15btech11009@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/deepak.nathani.564"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a class="info" href="https://twitter.com/deepaknathani11"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  </p>
+                </figcaption>
+              </figure>
+
+            </div>
+
+<!--            Manager 4-->
+            <div class="team-container">
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/soumitra.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Soumitra Khanale</h3>
+                  <p>
+                    <span>Manager 4</span><br>
+                    <span>+91 9949174386</span><br>
+                    <a class="info" href="mailto:me14btech11022@iith.ac.in">me14btech11022@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/soumitra.khanale"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+            </div>
+
+
+            <div class="team-container">
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/aman.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Aman Chourasia</h3>
+                  <p>
+                    <span>Marketing</span><br>
+                    <span>+91 8517885075</span><br>
+                    <a class="info" href="mailto:me15btech11003@iith.ac.in">me15btech11003@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/profile.php?id=100009757474028"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/man.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Ayush Gondole</h3>
+                  <p>
+                    <span>Marketing</span><br>
+                    <span>+91 9421619580</span><br>
+                    <a class="info" href="mailto:ch15btech11010@iith.ac.in">ch15btech11010@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/ayush.gondole"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/sourabh.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Sourabh Hans</h3>
+                  <p>
+                    <span>Marketing</span><br>
+                    <span>+91 7093405760</span><br>
+                    <a class="info" href="mailto:me15btech11036@iith.ac.in">me15btech11036@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/profile.php?id=100009693127904"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/unnatti.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Unnatti Sharma</h3>
+                  <p>
+                    <span>Marketing</span><br>
+                    <span>+91 9494509660</span><br>
+                    <a class="info" href="mailto:ch15btech11028@iith.ac.in">ch15btech11028@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/unnatti.sharma"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/man.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Sinha Vaibhav</h3>
+                  <p>
+                    <span>Finance</span><br>
+                    <span>+91 7032397960</span><br>
+                    <a class="info" href="mailto:cs15btech11034@iith.ac.in">cs15btech11034@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/vaibhav.sinha.33886"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+            </div>
+
+            <!-- Manager 5 -->
+            <div class="team-container">
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/man.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Krishnasai Koushik</h3>
+                  <p>
+                    <span>Manager 5</span><br>
+                    <span>+91 9959552408</span><br>
+                    <a class="info" href="mailto:ch14btech11001@iith.ac.in">ch14btech11001@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/krishnasaikoushik"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="team-container">
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/tharun.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Tharun Reddy</h3>
+                  <p>
+                    <span>Campus Publicity</span><br>
+                    <span>+91 8330925618</span><br>
+                    <a class="info" href="mailto:ee15btech11040@iith.ac.in">ee15btech11040@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/profile.php?id=100009370049635"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/ram.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Ram Nagesh</h3>
+                  <p>
+                    <span>Campus Publicity</span><br>
+                    <span>+91 9490017722</span><br>
+                    <a class="info" href="mailto:cs15btech11002@iith.ac.in">cs15btech11002@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/princeram98"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/dheeraj.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Dheeraj</h3>
+                  <p>
+                    <span>Campus Publicity</span><br>
+                    <span>+91 8374197432</span><br>
+                    <a class="info" href="mailto:me15btech11034@iith.ac.in">me15btech11034@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/dheeraj.sanabathula"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/satvik.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Siva Satvik</h3>
+                  <p>
+                    <span>Transport</span><br>
+                    <span>+91 8897799633</span><br>
+                    <a class="info" href="mailto:cs15btech11023@iith.ac.in">cs15btech11023@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/siva.satvik"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+              <figure class="team-member navy">
+                <div class="image"><img src="img/team/man.jpg" alt="sample47"/></div>
+                <figcaption>
+                  <h3>Bhargav Sai</h3>
+                  <p>
+                    <span>Security</span><br>
+                    <span>+91 9959552408</span><br>
+                    <a class="info" href="mailto:me14btech11010@iith.ac.in">me14btech11010@iith.ac.in</a><br>
+                    <a class="info" href="https://www.facebook.com/bhargav.sai.5"><i class="fa fa-facebook" style="font-size:1.5em;"></i></a>&nbsp;&nbsp;&nbsp;
+                    <!--<a class="info" href="https://twitter.com"><i class="fa fa-twitter" style="font-size:1.5em;"></i></a>
+                  --></p>
+                </figcaption>
+              </figure>
+
+            </div>
           </div> <!-- .cd-project-info -->
         </li>
       </ul> <!-- .cd-projects -->
 
       <button class="scroll cd-text-replace">Scroll</button>
     </div> <!-- .cd-project-container -->
-    
+
+
   </body>
 </html>
