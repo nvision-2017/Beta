@@ -144,6 +144,7 @@ Menu trigger
   transform: translateY(0) rotate(-45deg);
 }
 .cd-nav-trigger.nav-visible .cd-icon {
+  background-color: blue;
   /* user opens the navigation - transform the icon into an arrow */
   -webkit-transform: translateY(-50%) translateX(-50%);
   -moz-transform: translateY(-50%) translateX(-50%);
@@ -152,6 +153,7 @@ Menu trigger
   transform: translateY(-50%) translateX(-50%);
 }
 .cd-nav-trigger.nav-visible .cd-icon::after {
+  background-color: green;
   -webkit-transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(0.5);
   -moz-transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(0.5);
   -ms-transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(0.5);
@@ -159,6 +161,7 @@ Menu trigger
   transform: translateX(5px) translateY(3px) rotate(-45deg) scaleX(0.5);
 }
 .cd-nav-trigger.nav-visible .cd-icon::before {
+  background-color: red;
   -webkit-transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(0.5);
   -moz-transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(0.5);
   -ms-transform: translateX(5px) translateY(-3px) rotate(45deg) scaleX(0.5);
@@ -415,7 +418,7 @@ Projects
 @media only screen and (max-width: 768px) {
   .cd-projects-previews a{
     /* set a background image for each project */
-    background: #5b927d url(../img/about.jpg) no-repeat center center;
+    background: #5b927d url(../img/about_menu_mbl.jpg) no-repeat center center;
     background-size: cover;
   }
   .cd-projects-previews li:nth-of-type(2) a{
@@ -432,7 +435,7 @@ Projects
   }
 
   .cd-projects .preview-image {
-    background: #5b927d url(../img/about.jpg) no-repeat center center;
+    background: #5b927d url(../img/about_mbl.jpg) no-repeat center center;
     background-size: cover;
   }
   .cd-projects > li:nth-of-type(2) .preview-image {
