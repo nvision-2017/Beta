@@ -149,6 +149,9 @@ jQuery(document).ready(function($){
 	}
 
     navigationTrigger.click();
+    setTimeout(function() {
+        navigationTrigger.click();
+    }, 3000);
 });
 
  /*
