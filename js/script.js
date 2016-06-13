@@ -50,10 +50,17 @@ $(document).ready(function(){
             $('#MatModal-container').hide(150);
         },550);
     };
+
+    // Load
+    $("img[data-src]").each(function() {
+        var s = $(this).attr("data-src");
+        $(this).attr("src", s);
+    });
+
   $(window).resize(function() {
     $('figure.team-member > .image img').css('height', $('figure.team-member > .image img').width()+'px');
   });
-  $("*").scroll(function() {
+  $("*").on("scroll", function() {
     $('figure.team-member > .image img').css('height', $('figure.team-member > .image img').width()+'px');
   });
 });
