@@ -373,7 +373,7 @@ Projects
 
 .cd-projects-previews a{
   /* set a background image for each project */
-  background: #5b927d url(../img/about.jpg) no-repeat center center;
+  background: #5b927d url(../img/about_menu.jpg) no-repeat center center;
   background-size: cover;
 }
 
