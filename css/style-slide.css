@@ -70,7 +70,7 @@ Menu trigger
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.no-touch .cd-nav-trigger:hover {
+.no-touch .cd-nav-trigger:hover,.cd-nav-trigger:hover {
   background-color: #00ccff;
 }
 .cd-nav-trigger .cd-icon {
@@ -117,14 +117,18 @@ Menu trigger
   -o-transform: translateY(6px);
   transform: translateY(6px);
 }
+.cd-nav-trigger.project-open  {
+  background-color: #000;
+}
 .cd-nav-trigger.project-open .cd-icon {
   /* user selects a projects - transform the icon into a 'X' */
   background-color: rgba(255, 255, 255, 0);
 }
 .cd-nav-trigger.project-open .cd-icon::before, .cd-nav-trigger.project-open .cd-icon::after {
-  background-color: black;
+  background-color: #fff;
 }
 .cd-nav-trigger.project-open .cd-icon::before {
+  background-color: #fff;
   -webkit-transform: translateY(0) rotate(45deg);
   -moz-transform: translateY(0) rotate(45deg);
   -ms-transform: translateY(0) rotate(45deg);
@@ -132,6 +136,7 @@ Menu trigger
   transform: translateY(0) rotate(45deg);
 }
 .cd-nav-trigger.project-open .cd-icon::after {
+  background-color: #fff;
   -webkit-transform: translateY(0) rotate(-45deg);
   -moz-transform: translateY(0) rotate(-45deg);
   -ms-transform: translateY(0) rotate(-45deg);
