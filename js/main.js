@@ -85,7 +85,7 @@ jQuery(document).ready(function($){
 		} else {
 			slideToggleProjects(projectPreviews, projectIndex, 0, true);
 		}
-      $(".initial-div,.social-left,.social-right").hide();
+      $(".initial-div,#social").hide();
 	}
 
 	function closeProject() {
@@ -100,7 +100,7 @@ jQuery(document).ready(function($){
 			projects.find('.content-visible').removeClass('content-visible');
 			animating = false;
 		}
-      $(".initial-div,.social-left,.social-right").show();
+      $(".initial-div,#social").show();
 	}
 
 	function slideToggleProjects(projectsPreviewWrapper, projectIndex, index, bool) {
