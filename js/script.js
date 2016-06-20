@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-   $('.initial-div .bg').animate({opacity: 0}, 1000, function(){
-   $(this).css('background','url(' + 'img/bg.jpg' +') top center no-repeat').css('background-size','cover');
-   }).animate({opacity: 1}, 1000);
+   $('.initial-div').animate({opacity: 0}, 1000, function(){
+       $(this).animate({opacity: 1}, 1000);
+   });
 
    $('.MatModal').click(function(e){
         e.preventDefault();

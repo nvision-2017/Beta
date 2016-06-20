@@ -8,17 +8,10 @@ body {
   bottom: 0%;
   left: 0%;
   right: 0%;
+  background: url(../img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
-}
-
-.initial-div .bg {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  bottom: 0%;
-  right: 0%;
-  background: url(../img/bg.jpg) no-repeat center center;
-  z-index: -1;
 }
 
 .initial-div .logo-img {
