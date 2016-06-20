@@ -61,6 +61,11 @@ body {
   display: none;
 }
 
+.logo-img {
+  max-height: 55%;
+  max-width: 55%;
+}
+
 @media only screen and (max-width: 768px) {
   .mobile {
     display: block;
@@ -68,12 +73,12 @@ body {
   .desktop {
     display: none;
   }
+  .logo-img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 
-.logo-img {
-  max-height: 55%;
-  max-width: 55%;
-}
 
 
 
