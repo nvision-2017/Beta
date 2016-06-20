@@ -220,6 +220,7 @@ figure.team-member.hover figcaption:before {
 }
 #MatModal-container.seeModal {
     top:10%;
+    background-color: #002933;
     -webkit-box-shadow: 0 3px 8px 2px rgba(0,0,0,0.2);
     box-shadow: 0 3px 8px 2px rgba(0,0,0,0.2);
 }
