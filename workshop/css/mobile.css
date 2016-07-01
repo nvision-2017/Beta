@@ -22,7 +22,7 @@
 		margin: 0 auto;
 		max-width: none;
 		overflow: hidden;
-		padding: 10% 0;
+		padding: 10% 0%;
 		position: relative;
 		width: 95%;
 	}
@@ -70,7 +70,7 @@
 		margin: 0 auto;
 	}
 	#body.home .body div h1, #body.home .body div p {
-		width: 100%;
+		width: 95%;
 	}
 	/*#body.home .footer div ul li:first-child, #body.home .footer div ul li, #body .header div .sidebar ul li ul {
 		float: none;
@@ -175,6 +175,15 @@
 	#footer .connect div h1{
 		float: none;
 		font-size: 17px;
+		line-height: 20px;
+		margin: 0;
+		padding: 0 0 10%;
+		text-align: center;
+		width: 100%
+	}
+	#footer .connect div h1.r {
+		float: none;
+		font-size: 27px;
 		line-height: 20px;
 		margin: 0;
 		padding: 0 0 10%;

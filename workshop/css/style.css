@@ -308,6 +308,7 @@ img {
 	max-width: 940px;
 	overflow: hidden;
 	padding: 31px 10px 0;
+	margin-bottom: 0.5em;
 }
 #body.home .body div h1 {
 	color: #FFFFFF;
@@ -325,12 +326,12 @@ img {
 #body.home .body div p {
 	color: #ffffff;
 	display: block;
-	font-family: Arial;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	line-height: 24px;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0.5em; /**/
 	text-align: center;
 	width: 780px;
 }
@@ -1302,11 +1303,12 @@ img {
 	width: auto;
 }
 #footer .connect {
-	background-color: #a3a3a3;
+	/*background-color: #a3a3a3;*/
+	background-color: #000000;
 	margin: 0;
 	min-height: 84px;
 	overflow: hidden;
-	padding: 0;
+	padding: 1em;
 	width: auto;
 }
 #footer .connect div {
@@ -1327,6 +1329,19 @@ img {
 	text-align: right;
 	text-transform: uppercase;
 	width: 525px;
+}
+#footer .connect div h1.r {
+	color: #FFFFFF;
+	float: left;
+	font-family: audiowide-regular-webfont;
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 23px;
+	margin: 0;
+	padding: 0 0 0 20px;
+	text-align: left;
+	text-transform: uppercase;
+	width: 380px;
 }
 #footer .connect div div {
 	float: left;
@@ -1400,7 +1415,6 @@ img {
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
-	text-transform: uppercase;
 	width: 940px;
 }
 #wix {
