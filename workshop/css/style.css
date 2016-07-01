@@ -1,3 +1,17 @@
+@media only screen and (min-width: 768px) {
+	body::-webkit-scrollbar{
+		width: 10px;
+	}
+
+	body::-webkit-scrollbar-track{
+		-webkit-box-shadow: 0 0 2px grey;
+	}
+
+	body::-webkit-scrollbar-thumb{
+		background-color: #d9534f;
+		-webkit-box-shadow: 0 0 2px #f00,0 0 3px #f00;
+	}
+}
 /* Website template by freewebsitetemplates.com */
 body {
 	margin: 0;
@@ -6,7 +20,8 @@ body {
 	width: auto;
 }
 body #page {
-	background: url("../images/bg-home.jpg") no-repeat scroll center top #000000;
+	background: url("../images/bg-home.jpg") no-repeat scroll center top;
+	background-size: contain;
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
@@ -31,26 +46,35 @@ img {
 }
 /*----------------------------------------header-styles---------------------------------------*/
 #header {
-	background: url(../images/bg-transparent1.png) repeat;
-	margin: 0;
+	background: #000;
+	/*background: url(../images/bg-transparent1.png) repeat;
+	*/margin: 0;
 	min-height: 60px;
 	padding: 0;
 	width: auto;
 }
 #header div {
+	display: inline-block;
 	margin: 0 auto;
 	max-width: 940px;
 	min-height: 60px;
 	padding: 0 10px;
 }
-#header div a.logo {
+#header div a.logo,#header div a.nvision-logo {
 	display: block;
 	float: left;
-	height: 60px;
 	margin: 0 44px 0 0;
 	padding: 0;
+}
+#header div a.nvision-logo {
+	height: 60px;
+	width: 120px;
+}
+#header div a.logo{
+	height: 60px;
 	width: 304px;
 }
+
 #header div a img {
 	display: block;
 	margin: 0;
@@ -1392,30 +1416,11 @@ img {
 #footer .connect div div a.pinterest:hover {
 	background-position: -32px -76px;
 }
-#footer .footnote {
-	background-color: #FFFFFF;
-	margin: 0;
-	min-height: 84px;
-	overflow: hidden;
-	padding: 0;
-	width: auto;
-}
 #footer .footnote div {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 34px 0 0;
 	width: 960px;
-}
-#footer .footnote div p {
-	color: #000000;
-	display: block;
-	font-family: Arial;
-	font-size: 12px;
-	font-weight: normal;
-	margin: 0 auto;
-	padding: 0;
-	text-align: center;
-	width: 940px;
 }
 #wix {
 	max-width: 728px;

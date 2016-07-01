@@ -167,7 +167,7 @@
 	#footer .connect{
 		width: 100%;
 	}
-	#footer .connect div, #footer .footnote div {
+	#footer .connect div{
 		margin: 0 auto;
 		padding: 10% 0;
 		width: 95%;
@@ -198,9 +198,6 @@
 	}
 	#footer .connect div div a.facebook, #footer .connect div div a.twitter, #footer .connect div div a.googleplus, #footer .connect div div a.pinterest {
 		margin: 0 10px;
-	}
-	#footer .footnote div p{
-		width: 100%;
 	}
 }
 @media only screen and (max-width : 959px) {
