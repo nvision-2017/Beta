@@ -12,6 +12,11 @@
 		-webkit-box-shadow: 0 0 2px #f00,0 0 3px #f00;
 	}
 }
+
+.row-cen {
+    text-align:center;
+}
+
 /* Website template by freewebsitetemplates.com */
 body {
 	margin: 0;
@@ -34,9 +39,6 @@ a {
 }
 a:active {
 	background: none;
-}
-img {
-	border: none;
 }
 /*-------------------------------------------FONTS---------------------------------------------*/
 @font-face {
@@ -75,12 +77,6 @@ img {
 	width: 304px;
 }
 
-#header div a img {
-	display: block;
-	margin: 0;
-	padding: 0;
-	width: auto;
-}
 #header div ul {
 	display: inline-block;
 	float: left;
@@ -199,7 +195,7 @@ img {
 	padding: 0 10px;
 	position: relative;
 }
-#body.home .header div img.satellite {
+	#body.home .header div img.satellite {
 	display: block;
 	left: 10px;
 	margin: 0;
@@ -320,7 +316,7 @@ img {
 	opacity: 0.7;
 }
 #body.home .body {
-	background-color: #630031;
+	background-color: #fcc;
 	margin: 0;
 	min-height: 168px;
 	overflow: hidden;
@@ -348,7 +344,7 @@ img {
 	width: 780px;
 }
 #body.home .body div p {
-	color: #ffffff;
+	color: #000;
 	display: block;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
