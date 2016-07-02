@@ -219,22 +219,19 @@
 		width: auto;
 	}
 	#header {
-		min-height: 73px;
 		width: 100%;
 	}
 	#header div {
 		margin: 0 auto;
 		max-width: none;
-		min-height: 105px;
 		width: 95%;
 	}
 	#header div a.logo {
-		display: block;
+		display: inline-block;
 		float: left;
 		height: 60px;
-		margin: 5% 0 0;
+		margin: 0;
 		padding: 0;
-		width: 79%;
 	}
 	#header div span#mobile-navigation {
 		background: transparent url(../images/mobile/mobile-menu.png) no-repeat;
@@ -356,5 +353,11 @@
 	#header div ul li.selected a, #header div ul li.selected a:hover, #header div ul li.menu ul#selected li.selected a {
 		color: #eeeced;
 		text-decoration: none;
+	}
+	#header div a.nvision-logo {
+		width: 40%;
+	}
+	#header div a.logo {
+		width: 60%;
 	}
 }

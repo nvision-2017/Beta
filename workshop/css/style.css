@@ -63,18 +63,16 @@ a:active {
 	padding: 0 10px;
 }
 #header div a.logo,#header div a.nvision-logo {
-	display: block;
+	display: inline-block;
 	float: left;
-	margin: 0 44px 0 0;
+	margin: 0 0 0 0;
 	padding: 0;
 }
 #header div a.nvision-logo {
 	height: 60px;
-	width: 120px;
 }
 #header div a.logo{
 	height: 60px;
-	width: 304px;
 }
 
 #header div ul {
