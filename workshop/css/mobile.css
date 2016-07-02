@@ -24,7 +24,7 @@
 		overflow: hidden;
 		padding: 10% 0%;
 		position: relative;
-		width: 95%;
+		/*width: 95%;*/
 	}
 	#body.home .header div img.satellite{
 		left: 2px;
