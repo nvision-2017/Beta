@@ -17,6 +17,20 @@
     text-align:center;
 }
 
+.col-cen {
+    display:inline-block;
+    float:none;
+}
+
+#poster {
+	content: url(../images/bg-home.jpg);
+}
+@media only screen and (max-width: 768px) {
+	#poster {
+		content: url(../images/bg-home_mbl.jpg);
+	}
+}
+
 /* Website template by freewebsitetemplates.com */
 body {
 	margin: 0;
@@ -314,7 +328,7 @@ a:active {
 	opacity: 0.7;
 }
 #body.home .body {
-	background-color: #fcc;
+	background-color: #fff;
 	margin: 0;
 	min-height: 168px;
 	overflow: hidden;
@@ -323,7 +337,7 @@ a:active {
 }
 #body.home .body div {
 	margin: 0 auto;
-	max-width: 940px;
+	/*max-width: 940px;*/
 	overflow: hidden;
 	padding: 31px 10px 0;
 	margin-bottom: 0.5em;
@@ -1348,11 +1362,10 @@ a:active {
 	text-transform: uppercase;
 	width: 525px;
 }
-#footer .connect div h1.r {
+#footer .connect div h1.r,#footer .connect div h1.rc {
 	color: #FFFFFF;
 	float: left;
 	font-family: audiowide-regular-webfont;
-	font-size: 36px;
 	font-weight: normal;
 	line-height: 23px;
 	margin: 0;
@@ -1360,6 +1373,9 @@ a:active {
 	text-align: left;
 	text-transform: uppercase;
 	width: 380px;
+}
+#footer .connect div h1.r {
+	font-size: 36px;
 }
 #footer .connect div div {
 	float: left;
