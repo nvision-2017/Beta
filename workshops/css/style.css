@@ -29,6 +29,9 @@
 	#poster {
 		content: url(../images/bg-home_mbl.jpg);
 	}
+	#body.home .body {
+		background-color: #c0212a;
+	}
 }
 
 /* Website template by freewebsitetemplates.com */
@@ -328,7 +331,7 @@ a:active {
 	opacity: 0.7;
 }
 #body.home .body {
-	background-color: #fff;
+	background-color: #c0212b;
 	margin: 0;
 	min-height: 168px;
 	overflow: hidden;
@@ -356,7 +359,7 @@ a:active {
 	width: 780px;
 }
 #body.home .body div p {
-	color: #000;
+	color: #fff;
 	display: block;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
