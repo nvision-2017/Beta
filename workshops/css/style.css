@@ -30,7 +30,7 @@
 		content: url(../images/bg-home_mbl.jpg);
 	}
 	#body.home .body {
-		background-color: #c0212a;
+		background-color: #c0212a !important;
 	}
 }
 
