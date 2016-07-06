@@ -25,12 +25,22 @@
 #poster {
 	content: url(../images/bg-home.jpg);
 }
+
+.mobile {
+	display: none;
+}
 @media only screen and (max-width: 768px) {
 	#poster {
 		content: url(../images/bg-home_mbl.jpg);
 	}
 	#body.home .body {
 		background-color: #c0212a !important;
+	}
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
 	}
 }
 
@@ -1372,13 +1382,13 @@ a:active {
 	font-weight: normal;
 	line-height: 23px;
 	margin: 0;
-	padding: 0 0 0 20px;
+	padding: 8px 0 0 20px;
 	text-align: left;
 	text-transform: uppercase;
 	width: 380px;
 }
 #footer .connect div h1.r {
-	font-size: 36px;
+	font-size: 27px;
 }
 #footer .connect div div {
 	float: left;
