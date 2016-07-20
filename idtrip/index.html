@@ -22,6 +22,29 @@
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 </head>
 <body>
+    <!-- Modal -->
+    <div id="infoModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content" style="background-color: black;color: white;">
+          <div class="modal-header" style="background-color: #c0212a; color: white">
+            <button type="button" class="close" data-dismiss="modal" style="color:white">&times;</button>
+            <h4 class="modal-title" style="font-family: audiowide-regular-webfont;font-size: 23px;color: #fff; text-align: center; margin: 0 auto; padding: 0 0 0 0">Important</h4>
+          </div>
+          <div class="modal-body" style="background-color:black;">
+            <p style="font-family: audiowide-regular-webfont;font-size: 23px;color: #fff; text-align: center; margin: 0 auto; padding: 0 0 0 0">The industrial trip has been cancelled following the labour strike at the plant.</p>
+          </div>
+<!--
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+-->
+        </div>
+
+      </div>
+    </div>
+    
 	<div id="page">
 		<div id="header">
 			<div>
@@ -40,6 +63,7 @@
 				</div>
 			</div>
 
+<!--
 			<div class="body" style="top: 100%;">
 				<div>
 					<p>&eta;vision, IIT Hyderabad announces the first Industrial Visit of this year. As the name suggests, this time its an industrial visit to a CocaCola plant.</p>
@@ -68,9 +92,11 @@
 					<p><span style="text-decoration: underline">Note:</span> On the spot registrations are non acceptable, in case you want to join the trip intimate the co-ordinator prior in given contact detail.</p>
 				</div>
 			</div>
+-->
 		</div>
 		<div id="footer">
 			<div class="connect">
+<!--
 				<div class="desktop" style="padding:1em">
 					<h1>Date : July 23, 2016</h1>
 					<h1 class="r">Register <a target="_blank" href="https://docs.google.com/forms/d/152PSgcosAlhjs98a5sk7zqJrKyBN7S17vRSg4ciaSIY/viewform?c=0&w=1">here</a></h1>
@@ -78,13 +104,18 @@
 					<h1 class="r">Pay <a target="_blank" href="http://www.robokart.com/index.php?route=product%2Fproduct&path=147&product_id=737">here</a></h1>
 				</div>
 				<div class="mobile" style="padding:1em">
+				    <h1></h1>
 					<h1>Date : July 23, 2016</h1>
 					<h1>Fee : &#8377;1100/- per student</h1>
 					<h1 class="r">Register <a target="_blank" href="https://docs.google.com/forms/d/152PSgcosAlhjs98a5sk7zqJrKyBN7S17vRSg4ciaSIY/viewform?c=0&w=1">here</a></h1>
 					<h1 class="r">Pay <a target="_blank" href="http://www.robokart.com/index.php?route=product%2Fproduct&path=147&product_id=737">here</a></h1>
 				</div>
-				<div class="">
-					<p style="color: #fff; text-align: center; margin: 0 auto; padding: 0 0 0 0">Note: Registration is compulsory and use same credentials for registration and payment.</p>
+-->
+				<div class="desktop">
+					<p style="font-family: audiowide-regular-webfont;font-size: 23px;color: #fff; text-align: center; margin: 0 auto; padding: 0 0 0 0">The trip has been cancelled following the labour strike at the plant.</p>
+				</div>
+				<div class="mobile">
+					<p style="font-family: audiowide-regular-webfont;font-size: 23px;color: #fff; text-align: center; margin: 0 auto; padding: 0 0 0 0">The trip has been cancelled following the labour strike at the plant.</p>
 				</div>
 			</div>
 		</div>
@@ -92,10 +123,12 @@
 
 			<div class="body" style="top: 100%; position: relative">
 
+<!--
 				<div style="margin: 2em auto; padding: 0 0; width: 80%; border: solid white 1px; border-radius: 5px">
 					<p style="font-size:2em;">HOSPITALITY</p>
 					<p>Accomodation is available. Click <a href="http://goo.gl/forms/Mqs8fT56GoQtq0DA3" target="_blank">here</a> to register for that</p>
 				</div>
+-->
 
 				<div style="text-align:center;padding:1em;color:#fff;">
 					<b style="font-size:25px">Contact us</b>
@@ -121,6 +154,10 @@
 	</div>
 	<script src="../js/jquery-2.1.1.js" type="text/javascript"></script>
 	<script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script src="https://use.fontawesome.com/548009fd68.js"></script>
+	<script>
+        $("#infoModal").modal();
+    </script>
 </body>
 
 </html>
