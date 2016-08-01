@@ -273,11 +273,11 @@ a:after {
 #headerwrap {
 	/*background: url("http://blog.ourcrowd.com/wp-content/uploads/2013/10/media_banner_07.jpg") no-repeat center top;*/
   background: url("/fitnessband/assets/img/poster.jpg") no-repeat center top;
-	margin-top: -50px;
+	margin-top: 50px;
 	padding-top:120px;
 	text-align:center;
 	background-attachment: relative;
-	background-position: center center;
+	/*background-position: center center;*/
 	min-height: 650px;
 	width: 100%;
 
@@ -292,7 +292,7 @@ a:after {
     background-size: cover;
 }
 
-#headerwrap h1 {
+/*#headerwrap h1 {
 	color:#ffffff;
 	margin-top: 90px;
 	padding-bottom: 30px;
@@ -311,7 +311,7 @@ a:after {
 	letter-spacing: 3px;
 	margin-left: 15px;
 	text-shadow: 1px 1px 1px #000;
-}
+}*/
 
 #greywrap {
 	background: #f5f5f5;
