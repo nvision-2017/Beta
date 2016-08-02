@@ -274,7 +274,7 @@ html {
 
 #headerwrap {
 	/*background: url("http://blog.ourcrowd.com/wp-content/uploads/2013/10/media_banner_07.jpg") no-repeat center top;*/
-  background: url("/fitnessband/assets/img/poster.jpg") no-repeat center top;
+  background: url("/workshop/assets/img/poster.jpg") no-repeat center top;
 	margin-top: 50px;
 	text-align:center;
 	background-attachment: relative;
@@ -639,4 +639,17 @@ html {
 
 #indya_logo {
   width: 20%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  #headerwrap {
+    background: url("/workshop/assets/img/mobile.jpg") no-repeat center top;
+  }
 }
