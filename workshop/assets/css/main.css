@@ -279,7 +279,7 @@ html {
 	text-align:center;
 	background-attachment: relative;
 	/*background-position: center center;*/
-	min-height: 650px;
+	height: 93vh;
 	width: 100%;
 
     -webkit-background-size: 100%;
@@ -641,6 +641,9 @@ html {
   width: 20%;
 }
 
+.mobile {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
   .mobile {
