@@ -19,11 +19,13 @@ input,
 select,
 textarea {
     color: #222;
+    width: 100%;
 }
 
 body {
     font-size: 1em;
     line-height: 1.4;
+    width: 100%;
 }
 
 /*
@@ -298,22 +300,53 @@ html {
 #poster1,#poster2,#poster3,#poster4,#poster5 {
     /*background: url("http://blog.ourcrowd.com/wp-content/uploads/2013/10/media_banner_07.jpg") no-repeat center top;*/
     /*margin-top: 50px;*/
-    border: 2px solid black;
     text-align:center;`
     background-attachment: relative;
     /*background-position: center center;*/
     height: 100%;
     width: 100%;
 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+    -webkit-background-size: 100vw 100vh;
+    -moz-background-size: 100vw 100vh;
+    -o-background-size: 100vw 100vh;
+    background-size: 100vw 100vh;
 
-    -webkit-background-size: cover;
+    /*-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
+}
+
+#poster1 .poster-text {
+    top:55%;
+    font-size:1.5em;
+}
+
+#poster2 .poster-text {
+    top:55%;
+    left:30%;
+    font-size:1.5em;
+}
+
+#poster3 .poster-text {
+    top:55%;
+    left:30%;
+    color: #000;
+    font-size:1.5em;
+}
+
+#poster4 .poster-text {
+    top:56%;
+    left:30%;
+    color: #fff;
+    font-size:1.5em;
+}
+
+#poster5 .poster-text {
+    top:55%;
+    left:-30%;
+    color: #000;
+    font-size:1.5em;
 }
 
 
@@ -670,6 +703,13 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
+  #poster1 .poster-text,
+  #poster2 .poster-text,
+  #poster3 .poster-text,
+  #poster4 .poster-text,
+  #poster5 .poster-text {
+    left: 0;
+  }
   .mobile {
     display: block;
   }
