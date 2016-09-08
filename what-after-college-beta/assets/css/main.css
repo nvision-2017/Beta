@@ -279,25 +279,6 @@ html {
    Wrap Sections
    ========================================================================== */
 
-#poster1,#poster2,#poster3,#poster4,#poster5 {
-	/*background: url("http://blog.ourcrowd.com/wp-content/uploads/2013/10/media_banner_07.jpg") no-repeat center top;*/
-    /*margin-top: 50px;*/
-    text-align:center;`
-    background-attachment: relative;
-    /*background-position: center center;*/
-    height: 100vh;
-    width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 #poster1 {
   background: url("../img/poster1.jpg") no-repeat center top;
@@ -313,6 +294,26 @@ html {
 }
 #poster5 {
   background: url("../img/poster5.jpg") no-repeat center top;
+}
+#poster1,#poster2,#poster3,#poster4,#poster5 {
+    /*background: url("http://blog.ourcrowd.com/wp-content/uploads/2013/10/media_banner_07.jpg") no-repeat center top;*/
+    /*margin-top: 50px;*/
+    border: 2px solid black;
+    text-align:center;`
+    background-attachment: relative;
+    /*background-position: center center;*/
+    height: 100%;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
