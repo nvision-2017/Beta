@@ -282,6 +282,10 @@ html {
    ========================================================================== */
 
 
+#poster {
+  background: url("../img/poster.jpg") no-repeat center top;
+  margin-top: 3em;
+}
 #poster1 {
   background: url("../img/poster1.jpg") no-repeat center top;
 }
@@ -297,7 +301,7 @@ html {
 #poster5 {
   background: url("../img/poster5.jpg") no-repeat center top;
 }
-#poster1,#poster2,#poster3,#poster4,#poster5 {
+#poster,#poster1,#poster2,#poster3,#poster4,#poster5 {
     /*background: url("http://blog.ourcrowd.com/wp-content/uploads/2013/10/media_banner_07.jpg") no-repeat center top;*/
     /*margin-top: 50px;*/
     text-align:center;`
