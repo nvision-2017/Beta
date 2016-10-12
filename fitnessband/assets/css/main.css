@@ -274,10 +274,10 @@ html {
 
 #headerwrap {
 	/*background: url("http://blog.ourcrowd.com/wp-content/uploads/2013/10/media_banner_07.jpg") no-repeat center top;*/
-  background: url("/assets/img/6th-sense-web.jpg") no-repeat center top;
+  background: url("/fitnessband/assets/img/poster.jpg") no-repeat center top;
 	margin-top: 50px;
 	text-align:center;
-	/*background-attachment: relative;*/
+	background-attachment: relative;
 	/*background-position: center center;*/
 	height: 93vh;
 	width: 100%;
@@ -314,23 +314,23 @@ html {
 	text-shadow: 1px 1px 1px #000;
 }*/
 
-.greywrap {
+#greywrap {
 	background: #f5f5f5;
 	margin-top: 0px;
 	border-bottom: 1px solid #ddd;
 }
 
-.greywrap .callout {
+#greywrap .callout {
 	margin-bottom: 20px;
 }
 
-.greywrap p {
+#greywrap p {
 	margin-left: 30px;
 	margin-right: 30px;
 	letter-spacing: 1px;
 }
 
-.greywrap .icon {
+#greywrap .icon {
 	font-size: 60px;
 	line-height: 30px;
 	margin-bottom: 10px;
@@ -390,7 +390,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
 
-    /*background-attachment: relative;*/
+    background-attachment: relative;
 
     text-align: center;
 }
@@ -653,21 +653,6 @@ html {
     display: none;
   }
   #headerwrap {
-    background: url("/assets/img/mbl-web.jpg") no-repeat center top;
-    margin-top: 4em;
-	text-align:center;
-	height: 100%;
-	width: 100%;
-    background-size: cover;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("/fitnessband/assets/img/mobile.jpg") no-repeat center top;
   }
 }
