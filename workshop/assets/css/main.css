@@ -653,7 +653,7 @@ html {
     display: none;
   }
   #headerwrap {
-    background: url("/assets/img/mbl-web.jpg") no-repeat center top;
+    background: url("/workshop/assets/img/mbl-web.jpg") no-repeat center top;
     margin-top: 4em;
 	text-align:center;
 	height: 100%;
