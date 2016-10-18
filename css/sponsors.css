@@ -7,8 +7,6 @@
     float:none;
 }
 
-
-
 .thumb {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -61,9 +59,21 @@ a.thumbnail.active {
   .desktop {
     display: none;
   }
+  .threecolfixz {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+
+
+@media only screen and (min-width: 769px) {
+        .threecolfixzm {
+          display: none;
+        }
+        .threecolfixz {
+          position: relative;
+          left:12.5%;
+        }
   div::-webkit-scrollbar,iframe::-webkit-scrollbar {
     width: 10px;
   }
